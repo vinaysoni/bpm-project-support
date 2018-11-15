@@ -1,0 +1,59 @@
+{
+    "name": "File",
+    "fields": [
+        {
+            "fieldName": "fileName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "path",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "lastUpdated",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "createBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "stage",
+            "otherEntityName": "stage",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "worker",
+            "otherEntityName": "worker",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "delegation",
+            "otherEntityName": "delegation",
+            "otherEntityRelationshipName": "file"
+        }
+    ],
+    "changelogDate": "20181115234848",
+    "entityTableName": "file",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "BpmProjectSupport",
+    "applications": "*",
+    "microserviceName": "BpmProjectSupport"
+}
