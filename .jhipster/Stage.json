@@ -1,0 +1,45 @@
+{
+    "name": "Stage",
+    "fields": [
+        {
+            "fieldName": "stageName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "project",
+            "otherEntityName": "project",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "worker",
+            "otherEntityName": "worker",
+            "otherEntityRelationshipName": "stage"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "file",
+            "otherEntityName": "file",
+            "otherEntityRelationshipName": "stage"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "property",
+            "otherEntityName": "properties",
+            "otherEntityRelationshipName": "stage"
+        }
+    ],
+    "changelogDate": "20181115234423",
+    "entityTableName": "stage",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "BpmProjectSupport",
+    "applications": "*",
+    "microserviceName": "BpmProjectSupport"
+}

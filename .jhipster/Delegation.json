@@ -1,0 +1,32 @@
+{
+    "name": "Delegation",
+    "fields": [
+        {
+            "fieldName": "note",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "COMPLETED,STARTED,NOT_STARTED"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "file",
+            "otherEntityName": "file",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181115234426",
+    "entityTableName": "delegation",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "BpmProjectSupport",
+    "applications": "*",
+    "microserviceName": "BpmProjectSupport"
+}
