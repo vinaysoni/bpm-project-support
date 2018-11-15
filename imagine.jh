@@ -1,0 +1,80 @@
+
+entity Project {
+	startDate Instant,
+	endDate Instant,
+	name String,
+    owner String,
+    ownerEmail String
+}
+
+entity Stage {
+	stageName String
+}
+
+entity Worker {
+ userId String,
+ isPrimary Boolean,
+ onleave Boolean,
+ onleaveTill Instant
+
+}
+
+entity File {
+  fileName String,
+  path String,
+  creationDate Instant,
+  lastUpdated Instant,
+  createBy String,
+  modifiedBy String
+}
+
+enum Status {
+    COMPLETED, STARTED, NOT_STARTED
+}
+
+entity Delegation {
+
+note String,
+status Status
+
+}
+entity Properties {
+  name String,
+  type  String,
+  value  String,
+  location  String
+}
+
+entity SysProperties {
+  name String,
+  type  String,
+  value  String,
+  location  String
+}
+
+relationship OneToMany {
+	Project{stage} to Stage,
+	Stage{worker} to	Worker,
+    Project{worker} to Worker,
+    Worker {file} to File,
+    Stage{file} to File,
+	Project {property} to Properties,
+    Stage {property} to Properties
+    File{delegation} to Delegation
+}
+
+
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+paginate Delegation, Properties, SysProperties, Project, Stage, Worker, File  with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
