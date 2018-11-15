@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "gitCompany": "",
+    "baseName": "BpmProjectSupport",
+    "packageName": "com.privan.bpmps",
+    "packageFolder": "com/privan/bpmps",
+    "serverPort": 8081,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.7.0",
+    "jwtSecretKey": "YzQ3NTIwMjc0NWYzYjI4ZGViODMyNGVhOTE0OTA4MDBjNzcxOTY2MmJjZDIzNjhmMDUwYjY4YTEzNTYxNDA4ZDU1YzNjNTYxYjlkZTZlNTA1NjA2OTExYjAyZTA4YjUwNDE0YWNkM2RhMzBkZTU4NDA5NWUyNmEyNGZmMDg5ZmQ=",
+    "otherModules": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  },
+  "git-provider": "GitHub",
+  "git-company": "vinaysoni",
+  "repository-name": "bpm-project-support"
+}
