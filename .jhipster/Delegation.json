@@ -22,7 +22,7 @@
     "changelogDate": "20181115234426",
     "entityTableName": "delegation",
     "dto": "no",
-    "pagination": "pagination",
+    "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

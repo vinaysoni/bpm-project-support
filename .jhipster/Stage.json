@@ -35,7 +35,7 @@
     "changelogDate": "20181115234423",
     "entityTableName": "stage",
     "dto": "no",
-    "pagination": "pagination",
+    "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

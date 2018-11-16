@@ -2,9 +2,7 @@ package com.privan.bpmps.service;
 
 import com.privan.bpmps.domain.Properties;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -23,10 +21,9 @@ public interface PropertiesService {
     /**
      * Get all the properties.
      *
-     * @param pageable the pagination information
      * @return the list of entities
      */
-    Page<Properties> findAll(Pageable pageable);
+    List<Properties> findAll();
 
 
     /**

@@ -22,7 +22,7 @@
     "changelogDate": "20181115234428",
     "entityTableName": "sys_properties",
     "dto": "no",
-    "pagination": "pagination",
+    "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

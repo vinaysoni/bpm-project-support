@@ -45,7 +45,7 @@
     "changelogDate": "20181115234422",
     "entityTableName": "project",
     "dto": "no",
-    "pagination": "pagination",
+    "pagination": "no",
     "service": "serviceImpl",
     "jpaMetamodelFiltering": false,
     "fluentMethods": true,

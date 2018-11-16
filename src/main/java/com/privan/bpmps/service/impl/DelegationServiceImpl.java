@@ -6,11 +6,10 @@ import com.privan.bpmps.repository.DelegationRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -43,14 +42,13 @@ public class DelegationServiceImpl implements DelegationService {
     /**
      * Get all the delegations.
      *
-     * @param pageable the pagination information
      * @return the list of entities
      */
     @Override
     @Transactional(readOnly = true)
-    public Page<Delegation> findAll(Pageable pageable) {
+    public List<Delegation> findAll() {
         log.debug("Request to get all Delegations");
-        return delegationRepository.findAll(pageable);
+        return delegationRepository.findAll();
     }
 
 
