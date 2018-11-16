@@ -67,7 +67,7 @@ relationship OneToMany {
 
 // Set pagination options
 //paginate JobHistory, Employee with infinite-scroll
-paginate Delegation, Properties, SysProperties, Project, Stage, Worker, File  with pagination
+paginate  File  with pagination
 
 // Use Data Transfert Objects (DTO)
 // dto * with mapstruct
