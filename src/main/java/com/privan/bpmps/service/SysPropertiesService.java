@@ -2,9 +2,7 @@ package com.privan.bpmps.service;
 
 import com.privan.bpmps.domain.SysProperties;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -23,10 +21,9 @@ public interface SysPropertiesService {
     /**
      * Get all the sysProperties.
      *
-     * @param pageable the pagination information
      * @return the list of entities
      */
-    Page<SysProperties> findAll(Pageable pageable);
+    List<SysProperties> findAll();
 
 
     /**

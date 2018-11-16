@@ -2,9 +2,7 @@ package com.privan.bpmps.service;
 
 import com.privan.bpmps.domain.Delegation;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -23,10 +21,9 @@ public interface DelegationService {
     /**
      * Get all the delegations.
      *
-     * @param pageable the pagination information
      * @return the list of entities
      */
-    Page<Delegation> findAll(Pageable pageable);
+    List<Delegation> findAll();
 
 
     /**

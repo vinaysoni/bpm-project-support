@@ -2,9 +2,7 @@ package com.privan.bpmps.service;
 
 import com.privan.bpmps.domain.Project;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -23,10 +21,9 @@ public interface ProjectService {
     /**
      * Get all the projects.
      *
-     * @param pageable the pagination information
      * @return the list of entities
      */
-    Page<Project> findAll(Pageable pageable);
+    List<Project> findAll();
 
 
     /**
