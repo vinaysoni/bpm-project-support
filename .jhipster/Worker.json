@@ -1,0 +1,51 @@
+{
+    "name": "Worker",
+    "fields": [
+        {
+            "fieldName": "userId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isPrimary",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "onleave",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "onleaveTill",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "project",
+            "otherEntityName": "project",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "stage",
+            "otherEntityName": "stage",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "file",
+            "otherEntityName": "file",
+            "otherEntityRelationshipName": "worker"
+        }
+    ],
+    "changelogDate": "20181115234424",
+    "entityTableName": "worker",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "BpmProjectSupport",
+    "applications": "*",
+    "microserviceName": "BpmProjectSupport"
+}
